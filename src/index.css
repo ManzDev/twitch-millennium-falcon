@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root {
   --falcon-light-color: #e8e8e8;
   --falcon-medium-color: #adadad;
@@ -29,6 +31,7 @@ body {
 
   width: var(--width-size);
   filter: drop-shadow(0 0 5px #fff8);
+  position: relative;
 
   & .back-effects .circle {
     width: var(--width-size);
@@ -388,6 +391,16 @@ canvas {
 
   25%,
   100% { transform: translateY(10px) rotate(45deg); }
+}
+
+span {
+  font-family: "Bebas Neue", fantasy;
+  color: #fff;
+  z-index: 5;
+  font-size: 48px;
+  text-align: center;
+  display: block;
+  transform: translate(0, 425px);
 }
 
 @keyframes moveAntenna {
