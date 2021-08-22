@@ -393,14 +393,21 @@ canvas {
   100% { transform: translateY(10px) rotate(45deg); }
 }
 
-span {
+.text {
   font-family: "Bebas Neue", fantasy;
-  color: #fff;
+  color: #fff3;
   z-index: 5;
   font-size: 48px;
   text-align: center;
   display: block;
   transform: translate(0, 425px);
+  text-decoration-color: #77c5;
+  transition: color 0.25s, text-decoration-color 0.25s;
+
+  &:hover {
+    color: #fff;
+    text-decoration-color: #77c;
+  }
 }
 
 @keyframes moveAntenna {
